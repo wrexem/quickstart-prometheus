@@ -26,4 +26,9 @@ services:
       - prom
     volumes:
        - ./grafana_data:/var/lib/grafana
+  pushgateway:
+    image: prom/pushgateway
+    restart: unless-stopped
+    ports:
+     - "9095:9091"
 
