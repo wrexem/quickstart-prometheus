@@ -1,7 +1,7 @@
 version: "3"
 services:
   prom:
-    image: quay.io/prometheus/prometheus:v2.0.0
+    image: quay.io/prometheus/prometheus
     restart: unless-stopped
     volumes:
      - ./monitor/prometheus.yml:/etc/prometheus/prometheus.yml
