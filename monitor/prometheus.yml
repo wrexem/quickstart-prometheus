@@ -36,7 +36,7 @@ scrape_configs:
           group: 'prometheus-containers'
 
   - job_name: "pushgateway"
-    scrape_interval: "5s"
+    scrape_interval: 5s
     static_configs:
       - targets: ['pushgateway:9091']
         labels:
