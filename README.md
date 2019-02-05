@@ -11,6 +11,12 @@ $ docker-compose up -d
 ```
 Open a browser and point at http://localhost:9090/
 
+## special notes: user/group id for grafana is 472, prometheus is 65534
+So in this case: 
+`mkdir grafana_data && chown 472:472 grafana_data`
+and
+`mkdir data && data && chown 65534:65534 data`
+
 ### See also:
 
 * [Node Exporter](https://github.com/prometheus/node_exporter)
